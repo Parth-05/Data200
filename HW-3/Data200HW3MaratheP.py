@@ -1,13 +1,16 @@
 import streamlit as st
 import pandas as pd
-import os
+# import path
 import matplotlib.pyplot as plt
 
 st.title("Homework 3")
 st.write('Name: Parth Chinmaya Marathe')
 st.write('Student ID: 017411199')
 # file_path = os.path.join(os.getcwd(), "toy_dataset.csv")
-data = pd.read_csv("toy_dataset.csv")
+# dir = path.Path(__file__).abspath()
+# sys.append.path(dir.parent.parent)
+# path_to_model = './models/final_model.pkl'
+data = pd.read_csv("./toy_dataset.csv")
 gen_count = data['Gender'].value_counts()
 
 fig1, ax1 = plt.subplots()
