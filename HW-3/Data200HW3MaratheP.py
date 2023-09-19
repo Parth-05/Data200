@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 st.title("Homework 3")
 st.write('Name: Parth Chinmaya Marathe')
 st.write('Student ID: 017411199')
-file_path = os.path.join(os.getcwd(), "toy_dataset.csv")
-data = pd.read_csv(file_path)
+# file_path = os.path.join(os.getcwd(), "toy_dataset.csv")
+data = pd.read_csv("toy_dataset.csv")
 gen_count = data['Gender'].value_counts()
 
 fig1, ax1 = plt.subplots()
