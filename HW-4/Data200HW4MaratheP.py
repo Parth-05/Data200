@@ -14,20 +14,29 @@ dataset_path = path + '/mountain_flowers.csv'
 # reading the dataset
 mountain_flowers = pd.read_csv(dataset_path)
 
-categories = mountain_flowers['name']
-values = mountain_flowers['petal_length']
+flower_species = mountain_flowers['name']
+petal_lengths = mountain_flowers['petal_length']
 
 # Create a bar chart
-plt.bar(categories, values)
+plt.bar(flower_species, petal_lengths)
 
 # Add labels and title
-plt.xlabel('Categories')
-plt.ylabel('Values')
-plt.title('Bar Chart Example')
+plt.xlabel('Flower Species')
+plt.ylabel('Petal Lengths')
+plt.title('Comparison of Petal Lengths of Mountain Flowers')
 
 # Rotate x-axis labels if they are long
 plt.xticks(rotation=45, ha='right')
 
 st.pyplot(plt)
+st.write("**Analysis/Observation:**") 
+st.write("Thus we can see clearly see from the above graph that: \n"
+"1. Violet flower species has the shortest petal length. \n"
+"2. Bluebells flower species has the second longest petal length. \n"
+"3. Colorado lotus flower species has the longest petal length.")
 
-st.write(mountain_flowers[['name', 'petal_length']].rename(columns={'name': 'categories'}))
+st.write('**Detailed Data View of Flower Species and Petal Length**')
+name_petal_length_df = mountain_flowers[['name', 'petal_length']].rename(columns={'name': 'Flower Species', 'petal_length': 'Petal Length'})
+st.write(name_petal_length_df)
+
+
