@@ -4,7 +4,7 @@ import os
 import matplotlib.pyplot as plt
 
 # Title
-st.title("Lab 4")
+st.title("Homework 4")
 st.write('Name: Parth Chinmaya Marathe')
 st.write('Student ID: 017411199')
 # getting path of directory
