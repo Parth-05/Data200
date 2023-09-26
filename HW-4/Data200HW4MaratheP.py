@@ -30,7 +30,7 @@ plt.xticks(rotation=45, ha='right')
 
 st.pyplot(plt)
 st.write("**Analysis/Observation:**") 
-st.write("Thus we can see clearly see from the above graph that: \n"
+st.write("Thus we can see observe the following points from the above graph: \n"
 "1. Violet flower species has the shortest petal length. \n"
 "2. Bluebells flower species has the second longest petal length. \n"
 "3. Colorado lotus flower species has the longest petal length.")
